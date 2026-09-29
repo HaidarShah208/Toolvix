@@ -123,30 +123,20 @@ export default function HomePage() {
       <section className="relative isolate overflow-hidden border-b border-border">
         <div className="bg-grid absolute inset-0 -z-10 opacity-60" aria-hidden="true" />
         <div className="container-page py-14 sm:py-20 lg:py-24">
-          <div className="mx-auto max-w-3xl text-center">
+          <div className="mx-auto max-w-5xl text-center">
             <p className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-muted shadow-sm">
               <span className="size-1.5 rounded-full bg-success" aria-hidden="true" />
               {counts.calculators} calculators · {counts.tools} tools · no sign-up
             </p>
-            <h1 className="mt-6 text-4xl font-semibold tracking-tight text-balance text-foreground sm:text-5xl lg:text-6xl">
-              Free Calculators &amp; Online Tools
+            <h1 className="mt-6 text-4xl font-semibold text-balance text-foreground sm:text-5xl lg:text-6xl">
+              Free Calculators &amp;<br />  Online Tools
             </h1>
-            <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-muted">
+            <p className="mx-auto mt-5 max-w-3xl text-lg leading-relaxed text-muted">
               Calculate, convert, generate and simplify everyday tasks with fast, free online tools.
             </p>
             <div className="mx-auto mt-8 max-w-xl text-left">
               <SearchBox size="lg" />
-              <p className="mt-3 text-center text-sm text-subtle">
-                Try:{" "}
-                {tryTools.map((t, i) => (
-                  <span key={t.id}>
-                    <Link href={toolHref(t)} className="text-muted underline decoration-border-strong underline-offset-4 hover:text-foreground">
-                      {t.name.replace(" Generator", " generator").replace(" Calculator", " calculator")}
-                    </Link>
-                    {i < tryTools.length - 1 ? ", " : ""}
-                  </span>
-                ))}
-              </p>
+             
             </div>
             <div className="mt-8 flex flex-col justify-center gap-3 min-[420px]:flex-row">
               <ButtonLink href="/calculators" size="lg">

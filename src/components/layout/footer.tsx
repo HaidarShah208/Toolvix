@@ -29,34 +29,36 @@ export function Footer() {
 
   return (
     <footer className="mt-24 border-t border-border bg-surface">
-      <div className="container-page py-12">
-        <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-6">
-          <div className="col-span-2 sm:col-span-3 lg:col-span-1">
+      <div className="w-full px-4 py-12 sm:px-6 lg:px-10 xl:px-16">
+        <div className="flex flex-col gap-10 lg:flex-row lg:justify-between lg:gap-16">
+          <div className="shrink-0 lg:max-w-xs">
             <Link href="/" className="inline-flex items-center gap-2.5 text-lg font-semibold text-foreground">
               <LogoMark />
               {siteConfig.name}
             </Link>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted">{siteConfig.tagline}</p>
           </div>
-          <FooterColumn title="Calculators" links={[...calculators, { href: "/calculators", label: "All calculators" }]} />
-          <FooterColumn title="Tools" links={[...tools, { href: "/tools", label: "All tools" }]} />
-          <FooterColumn title="Guides" links={[...guides, { href: "/guides", label: "All guides" }]} />
-          <FooterColumn
-            title="Company"
-            links={[
-              { href: "/about", label: "About" },
-              { href: "/contact", label: "Contact" },
-              { href: "/search", label: "Search" },
-            ]}
-          />
-          <FooterColumn
-            title="Legal"
-            links={[
-              { href: "/privacy-policy", label: "Privacy Policy" },
-              { href: "/terms", label: "Terms of Use" },
-              { href: "/disclaimer", label: "Disclaimer" },
-            ]}
-          />
+          <div className="grid flex-1 grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-3 lg:max-w-4xl lg:grid-cols-5">
+            <FooterColumn title="Calculators" links={[...calculators, { href: "/calculators", label: "All calculators" }]} />
+            <FooterColumn title="Tools" links={[...tools, { href: "/tools", label: "All tools" }]} />
+            <FooterColumn title="Guides" links={[...guides, { href: "/guides", label: "All guides" }]} />
+            <FooterColumn
+              title="Company"
+              links={[
+                { href: "/about", label: "About" },
+                { href: "/contact", label: "Contact" },
+                { href: "/search", label: "Search" },
+              ]}
+            />
+            <FooterColumn
+              title="Legal"
+              links={[
+                { href: "/privacy-policy", label: "Privacy Policy" },
+                { href: "/terms", label: "Terms of Use" },
+                { href: "/disclaimer", label: "Disclaimer" },
+              ]}
+            />
+          </div>
         </div>
         <div className="mt-10 flex flex-col gap-2 border-t border-border pt-6 text-xs text-subtle sm:flex-row sm:items-center sm:justify-between">
           <p>
