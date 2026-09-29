@@ -2,9 +2,24 @@ function normalizeUrl(url: string): string {
   return url.replace(/\/+$/, "");
 }
 
-const siteUrl = normalizeUrl(
-  process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
-);
+/** Canonical production origin. Every canonical URL, the sitemap and robots.txt use it. */
+const PRODUCTION_URL = "https://www.toolvix.store";
+
+/**
+ * Resolves the site origin. A production build never falls back to
+ * localhost: a missing or localhost NEXT_PUBLIC_SITE_URL would otherwise leak
+ * into canonicals and the sitemap and make Search Console reject every URL.
+ */
+function resolveSiteUrl(): string {
+  const fromEnv = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+  const isLocal = !fromEnv || /localhost|127\.0\.0\.1|example\.com/.test(fromEnv);
+  if (process.env.NODE_ENV === "production") {
+    return normalizeUrl(isLocal ? PRODUCTION_URL : fromEnv);
+  }
+  return normalizeUrl(fromEnv || "http://localhost:3000");
+}
+
+const siteUrl = resolveSiteUrl();
 
 export const siteConfig = {
   name: "Toolvix",
