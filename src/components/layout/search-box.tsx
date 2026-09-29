@@ -105,7 +105,7 @@ export function SearchBox({
         />
       </div>
 
-      {showList ? (
+      {/* {showList ? (
         <div
           className={cn(
             variant === "inline" &&
@@ -158,7 +158,7 @@ export function SearchBox({
             </Link>
           ) : null}
         </div>
-      ) : null}
+      ) : null} */}
     </div>
   );
 }

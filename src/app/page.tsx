@@ -134,11 +134,11 @@ export default function HomePage() {
             <p className="mx-auto mt-5 max-w-3xl text-lg leading-relaxed text-muted">
               Calculate, convert, generate and simplify everyday tasks with fast, free online tools.
             </p>
-            <div className="mx-auto mt-8 max-w-xl text-left">
+            <div className="mx-auto mt-8 max-w-3xl text-left">
               <SearchBox size="lg" />
              
             </div>
-            <div className="mt-8 flex flex-col justify-center gap-3 min-[420px]:flex-row">
+            <div className="mt-8 flex flex-col justify-center gap-1 md:gap-3 min-[420px]:flex-row">
               <ButtonLink href="/calculators" size="lg">
                 Explore Calculators
                 <ArrowRight />
@@ -237,7 +237,7 @@ export default function HomePage() {
           <GuideGrid guides={getPopularGuides().slice(0, 6)} />
         </section>
 
-        <div className="mx-auto max-w-3xl">
+        <div className="mx-auto ">
           <FAQSection faqs={faqs} />
         </div>
       </div>
