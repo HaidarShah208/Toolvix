@@ -48,7 +48,7 @@ for (const p of pages) {
   const otherD = seenDescriptions.get(p.description);
   if (otherD) errors.push(`Duplicate description: ${p.id} and ${otherD}`);
   seenDescriptions.set(p.description, p.id);
-  // " | Toolora" adds 10 characters.
+  // " | Toolvix" adds 10 characters.
   if (p.title.length + 10 > 70) warnings.push(`${p.id}: title is ${p.title.length + 10} chars`);
   if (p.description.length < 70 || p.description.length > 170)
     warnings.push(`${p.id}: description is ${p.description.length} chars`);

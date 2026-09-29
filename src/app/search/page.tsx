@@ -7,7 +7,7 @@ import { SearchResults } from "./search-results";
 // Search result pages are thin and duplicate-prone, so they are kept out of the index.
 export const metadata = buildMetadata({
   title: "Search Calculators & Tools",
-  description: "Search every calculator, online tool and guide on Toolora by name, topic or keyword.",
+  description: "Search every calculator, online tool and guide on Toolvix by name, topic or keyword.",
   path: "/search",
   noIndex: true,
 });

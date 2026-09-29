@@ -160,7 +160,7 @@ export default function JsonFormatter() {
           setInput(e.target.value);
           if (outcome?.kind === "error") setOutcome(null);
         }}
-        placeholder='{"name": "Toolora", "tools": 40}'
+        placeholder='{"name": "Toolvix", "tools": 40}'
         spellCheck={false}
         autoComplete="off"
         autoCapitalize="off"

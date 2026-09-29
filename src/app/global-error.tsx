@@ -18,7 +18,7 @@ export default function GlobalError({ retry }: { error: Error & { digest?: strin
           padding: 16,
         }}
       >
-        <title>Something went wrong | Toolora</title>
+        <title>Something went wrong | Toolvix</title>
         <main style={{ maxWidth: 480, textAlign: "center" }}>
           <h1 style={{ fontSize: 28, marginBottom: 8 }}>Something went wrong</h1>
           <p style={{ opacity: 0.8, lineHeight: 1.6 }}>

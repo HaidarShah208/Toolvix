@@ -112,7 +112,7 @@ const guide: GuideContent = {
     {
       question: "Is it safe to use an online password generator?",
       answer:
-        "It is safest when the password is generated locally in your browser with a cryptographically secure random source and never sent over the network. Toolora's password generator works that way.",
+        "It is safest when the password is generated locally in your browser with a cryptographically secure random source and never sent over the network. Toolvix's password generator works that way.",
     },
     {
       question: "What makes a password weak even if it is long?",

@@ -57,7 +57,7 @@ export function SearchDialog() {
         {open ? (
           <div className="p-4 sm:p-5">
             <div className="mb-3 flex items-center justify-between">
-              <h2 className="text-base font-semibold">Search Toolora</h2>
+              <h2 className="text-base font-semibold">Search Toolvix</h2>
               <Button variant="ghost" size="icon" onClick={() => setOpen(false)} aria-label="Close search">
                 <X />
               </Button>

@@ -1,4 +1,4 @@
-# Toolora
+# Toolvix
 
 Free calculators and everyday online tools, built with Next.js (App Router), TypeScript and Tailwind CSS.
 Every tool runs in the browser; user input is never sent to a server.
@@ -66,7 +66,7 @@ Guides work the same way: add an entry to `src/config/guides.ts`, write `src/dat
 
 ## SEO
 
-- Unique title (`Primary keyword – Benefit | Toolora`), description, self-referencing canonical, Open Graph and Twitter card on every indexable page, built through `lib/seo/metadata.ts`.
+- Unique title (`Primary keyword – Benefit | Toolvix`), description, self-referencing canonical, Open Graph and Twitter card on every indexable page, built through `lib/seo/metadata.ts`.
 - JSON-LD graph per page: `WebSite` + `Organization` (home), `WebPage`/`CollectionPage`, `BreadcrumbList`, `WebApplication` (tools), `Article` (guides), `FAQPage` and `ItemList` (categories). No ratings, reviews or prices.
 - `sitemap.xml` is generated from the registries, and `robots.txt` references it. `/search` is `noindex, follow` and excluded from the sitemap.
 - Set `NEXT_PUBLIC_ALLOW_INDEXING=false` on preview deployments to block crawling.

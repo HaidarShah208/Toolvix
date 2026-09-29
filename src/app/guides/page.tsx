@@ -37,7 +37,7 @@ const faqs: FAQ[] = [
   {
     question: "Who writes these guides?",
     answer:
-      "The guides are written and reviewed by the Toolora team. Each one explains the standard formula, walks through examples with the numbers shown, and links to a calculator that does the same arithmetic.",
+      "The guides are written and reviewed by the Toolvix team. Each one explains the standard formula, walks through examples with the numbers shown, and links to a calculator that does the same arithmetic.",
   },
   {
     question: "Can I use the formulas for homework or work?",

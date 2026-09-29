@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { absoluteUrl, siteConfig } from "@/config/site";
 
 interface PageMetaInput {
-  /** Page title without the brand; the root template appends " | Toolora". */
+  /** Page title without the brand; the root template appends " | Toolvix". */
   title: string;
   description: string;
   /** Path of the canonical URL, e.g. "/calculators/bmi-calculator". */

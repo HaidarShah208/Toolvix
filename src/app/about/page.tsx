@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site";
 import { getToolsByCategory } from "@/config/tools";
 import { buildMetadata } from "@/lib/seo/metadata";
 
-const title = "About Toolora";
+const title = "About Toolvix";
 const description = `${siteConfig.name} builds free, privacy-friendly calculators and online tools that explain their results. Learn how we build and check them.`;
 
 export const metadata = buildMetadata({ title, description, path: "/about" });

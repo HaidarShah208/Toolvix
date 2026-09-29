@@ -7,7 +7,7 @@ const siteUrl = normalizeUrl(
 );
 
 export const siteConfig = {
-  name: "Toolora",
+  name: "Toolvix",
   tagline: "Free calculators and everyday online tools.",
   description:
     "Free online calculators and everyday tools for percentages, GPA, BMI, loans, text, images, JSON and more. Fast, simple and processed in your browser.",
