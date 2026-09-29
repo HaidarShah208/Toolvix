@@ -74,3 +74,6 @@ Guides work the same way: add an entry to `src/config/guides.ts`, write `src/dat
 ## Environment variables
 
 See `.env.example`. Only `NEXT_PUBLIC_SITE_URL` is required in production. Analytics and ads stay off until their IDs are set.
+
+#future-domain name
+YourCalculatorTools.com
